@@ -1,0 +1,19 @@
+<div class="relative-wizard">
+  <div class="wizard-card">
+    <div class="review-sec">
+      <div class="review-sec-item">
+        <p>Date: </p><h4> <%= @groupmeetup.date.to_time.strftime("%A %d %Y") %> <%= @groupmeetup.time.strftime("at %I:%M%p") %></h4>
+      </div>
+      <div class="review-sec-item">
+        <p>Add Info: </p><h4> <%= @groupmeetup.additional_info %></h4>
+      </div>
+    </div>
+    <div class="review-button">
+      <%= link_to "edit", previous_wizard_path %>
+      <%= simple_form_for @groupmeetup, url: wizard_path, method: :put do |f| %>
+        <%= f.input :review, as: :hidden %>
+        <%= f.submit 'Confirm', class: 'btn-prim-s' %>
+      <% end %>
+    </div>
+  </div>
+</div>

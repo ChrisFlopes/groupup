@@ -1,0 +1,28 @@
+  <div id="header-link">
+    <h2>Here are all your Meetups</h2>
+    <%= link_to "Create Meetup", meetups_path, method: :post, class: "btn-prim" %>
+  </div>
+
+    <div id="players-search" class="meetups-list">
+    <% @meetups.each do |meetup| %>
+      <div class="card-list">
+        <div class="card-avatar">
+          <div class="avatar-batch">
+            <img class="avatar-large" alt="avatar" src="<%= meetup.host.photo %>" />
+            <div class="card-specifications">
+              <h4><%= meetup.date.month %>.<%= meetup.date.day %>.<%= meetup.date.year %> at <%= meetup.time.hour %>h<%= meetup.time.min %></h4>
+              <h5>with <%= meetup.host.first_name %> <%= meetup.host.last_name %> </h5>
+              <div class="card-spots">
+                <h4><%= meetup.participations.length %> people are attending.</h4>
+              </div>
+              <%= link_to 'more details', meetup_path(meetup) %>
+              <%= link_to "Remove",
+                  meetup_path(meetup),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+   </div>

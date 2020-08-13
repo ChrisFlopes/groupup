@@ -1,0 +1,95 @@
+.info-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 760px;
+  margin: 20px auto;
+}
+
+.info-bar p {
+  margin: 0px;
+  padding-right: 40px;
+}
+
+.hello-section {
+  vertical-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+.hello-section h1 {
+  font-size: 48px;
+}
+
+.hello-section h2 {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 500;
+  color: $color-green;
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: $color-green;
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: $color-green;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: 500;
+  line-height: 23px;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: $color-green;
+}
+
+h5 {
+  font-weight: 500;
+  line-height: 18px;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: $color-green;
+}
+
+p {
+  font-weight: normal;
+  line-height: 28px;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: $color-green;
+}
+
+a {
+  font-weight: 500;
+  line-height: 28px;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-decoration-line: underline;
+  color: $color-green;
+    &:hover {
+      color: $color-red;
+    }
+}

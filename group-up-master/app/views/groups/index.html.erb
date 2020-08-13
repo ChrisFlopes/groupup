@@ -1,0 +1,28 @@
+<div class="search-container">
+  <div id="header-link">
+    <h2>Here are all your groups</h2>
+    <%= link_to "Create Group", groups_path, method: :post, class: "btn-prim" %>
+  </div>
+
+  <div class="groups-list">
+    <% @your_groups.each do |group| %>
+      <div class="card-list">
+        <div class="card-avatar">
+          <div class="avatar-batch">
+            <img class="avatar-large" alt="avatar" src="<%= group.host.photo %>" />
+            <div class="card-specifications">
+              <h5>with <%= group.host.first_name %> <%= group.host.last_name %> </h5>
+              <div class="card-spots">
+                <h4><%= group.members.length %> people.</h4>
+              </div>
+              <%= link_to 'more details', group_path(group) %>
+              <%= link_to "Remove",
+                  group_path(group),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>

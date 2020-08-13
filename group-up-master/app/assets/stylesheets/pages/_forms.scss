@@ -1,0 +1,48 @@
+.log-in {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0;
+}
+.log-in img {
+  height: 40px;
+  width: 40px;
+  opacity: 0.5;
+}
+.log-in h2 {
+  margin: 0px;
+}
+
+label {
+  //display: none;
+  font-size: 18px;
+  color: $color-green;
+  font-weight: 400;
+  margin-bottom: 15px
+}
+
+input:-internal-autofill-selected, textarea:-internal-autofill-previewed, textarea:-internal-autofill-selected, select:-internal-autofill-previewed, select:-internal-autofill-selected {
+    background-color: $color-green !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.form-control:focus {
+  border-color: $color-red;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.remember-me {
+  display: flex;
+  align-items: center
+}
+
+.remember-me h2 {
+  margin: 0px;
+}
+
+.bottom-links {
+  margin-top: 20px;
+  margin-bottom: 40px
+}

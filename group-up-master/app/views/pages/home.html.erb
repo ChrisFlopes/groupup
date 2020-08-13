@@ -1,0 +1,16 @@
+<div class="info-bar">
+  <div class="date">
+    <p><%= Date.today.to_s(:long) %></p>
+  </div>
+</div>
+
+<div class="hello-section">
+  <% if Time.zone.now.hour >= 1.00 && Time.zone.now.hour <= 10.30 %>
+    <h1>Good morning <%= current_user.first_name %>,</h1>
+  <% elsif Time.zone.now.hour >= 10.31 && Time.zone.now.hour <= 16.30%>
+    <h1>Good afternoon <%= current_user.first_name %>,</h1>
+  <% else %>
+    <h1>Good evening <%= current_user.first_name %>,</h1>
+  <% end %>
+  <%= link_to "Create a Meetup", meetups_path, method: :post, class: "btn-prim" %>
+</div>

@@ -1,0 +1,12 @@
+<h1>Edit</h1>
+
+<div class="container">
+  <div class="card-product-edit">
+    <%= simple_form_for(@meetup) do |f| %>
+      <%= f.input :date %>
+      <%= f.input :time, as: :time, minute_step: 15 %>
+      <%= f.input :additional_info %>
+      <%= f.button :submit %>
+    <% end %>
+  </div>
+</div>

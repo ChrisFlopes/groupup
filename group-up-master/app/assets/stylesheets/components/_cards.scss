@@ -1,0 +1,357 @@
+.card-list {
+  display: flex;
+  border-bottom: 1px solid $color-green;
+  padding: 20px;
+  max-width: 630px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.avatar-batch {
+  position: relative;
+  height: 65px;
+}
+
+.card-specifications {
+  position: absolute;
+  top: 0%;
+  left: 85px;
+  width: 250px;
+}
+
+.card-specifications h3 {
+  font-weight: 500;
+  line-height: 23px;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: $color-green;
+  text-decoration: none;
+  margin: 0px;
+}
+
+.card-specifications h4 {
+  font-weight: 500;
+  line-height: 23px;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: $color-green;
+  margin: 0px;
+}
+
+.card-specifications h5 {
+  font-weight: 500;
+  line-height: 18px;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: $color-green;
+  margin: 0px;
+}
+
+.card-spots {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-button {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-court {
+  position: relative;
+  // background-color: $color-green25;
+  background-image: asset-url("court_outline.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 630px;
+  height: 275px;
+  border-bottom: 1px solid $color-green;
+  margin: auto;
+}
+
+.court-date {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+}
+
+.court-date p {
+  font-weight: 600;
+  line-height: 18px;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin: 0px;
+}
+
+.court-player-left {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+}
+
+.court-player-left p {
+  line-height: 23px;
+  margin: 0px;
+  padding-left: 20px;
+}
+
+.skill-level-position {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+
+.court-player-right {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+}
+
+.court-player-right p {
+  line-height: 23px;
+  margin: 0px;
+  padding-left: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.host-buttons {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  a {
+    text-decoration: none;
+  }
+}
+
+th, td {
+  height: 90px;
+}
+
+.host-buttons a {
+  color: $color-green;
+  padding-right: 5px;
+      &:hover {
+      color: $color-red;
+      cursor: pointer;
+    }
+}
+
+.dropdown-menu-card {
+  width: 500px;
+  padding: 20px;
+}
+
+.dropdown-menu-card p {
+  margin: 0px;
+}
+
+.wizard-card {
+  border: 1px solid $color-green;
+  box-shadow: 0 1px 10px $color-green;
+  height: 400px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+}
+
+.wizrd-card input {
+  margin: 20px;
+  border-radius: 0px;
+}
+
+.fucking-relatives {
+  position: relative;
+  margin: 40px;
+}
+
+.one {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.two {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.three {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.four {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+
+}
+.fucking-center {
+  display: flex;
+  justify-content: center;
+}
+
+.width-button-card {
+  width: 125px;
+  text-align: center;
+}
+
+.relative-wizard {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wizard-card-header-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.wizard-card-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.wizard-card-header-1 img {
+  height: 40px;
+  width: 40px;
+  opacity: 0.5;
+}
+
+.wizard-card-header img {
+  height: 40px;
+  width: 40px;
+  opacity: 0.5;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.wizard-card form {
+  width: 100%;
+}
+
+.search-for-me form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wizard-card-header h2 {
+  margin: 0px;
+}
+
+.wizard-card-header-1 h2 {
+  margin: 0px;
+}
+
+.wizard-card-item-no-padding {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.wizard-card-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.stop-text-decoration{
+  text-decoration: none;
+  text-align: left;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+textarea.form-control {
+  margin: auto;
+  width: 280px;
+  height: 82px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.review-things {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  font-size: 12px;
+  margin: 0px;
+}
+
+.review-sec {
+  display: flex;
+  flex-direction: column
+}
+
+.review-sec-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.review-sec-item h4 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+
+.review-sec-item p {
+  color: $color-green;
+  margin-right: 100px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.review-button {
+  display: flex;
+  align-items: center;
+}
+
+.review-button a {
+  margin-right: 40px
+}
+
+.review-button input {
+  margin: 0px
+}
+
+.form-control {
+  color: $color-green;
+}

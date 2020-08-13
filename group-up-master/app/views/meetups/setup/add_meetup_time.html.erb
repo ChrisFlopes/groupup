@@ -1,0 +1,17 @@
+<div class="relative-wizard">
+  <div class="wizard-card">
+    <div class="wizard-card-header">
+      <h2>Date & Time</h2>
+    </div>
+    <%= simple_form_for @meetup, url: wizard_path, method: :put do |f| %>
+      <div class="wizard-card-item">
+        <%= f.date_field :date, min: Date.today, class: "date-time-stuff"%>
+        <%= f.time_field :time, :minute_step => 15, class: "date-time-stuff" %>
+        <%= f.submit 'Set date', class: "btn-sec-s" %>
+      </div>
+    <% end %>
+    <%= link_to previous_wizard_path do %>
+      <i class="fas fa-chevron-left"></i>
+    <% end %>
+  </div>
+</div>

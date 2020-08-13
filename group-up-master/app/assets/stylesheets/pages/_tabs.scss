@@ -1,0 +1,55 @@
+// TABS meetupS
+.tabs-meetups {
+  background-color: $color-red;
+  max-width: 790px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.tabs-meetups a {
+  vertical-align: center;
+}
+
+.tabs-underlined {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tabs-underlined button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tabs-underlined button:hover {
+  border-bottom: 3px solid $color-green;
+}
+
+.tabs-underlined button.active {
+  opacity: 1;
+  border-bottom: 3px solid $color-green;
+}
+
+.tabcontent {
+ display: none;
+}
+
+.text-content-no-meetups {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.tabs-show-link a {
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.tabs-show-link {
+  margin-top: 20px;
+}

@@ -1,0 +1,25 @@
+<div id="header-link">
+  <%= link_to "Join this Group", new_group_member_path(@group), class:"btn-prim-s"%>
+</div>
+<div class="groups-list">
+  <% @group.users.each do |member| %>
+    <% member.meetups.each do |meetup| %>
+      <div class="card-list">
+        <div class="card-avatar">
+          <div class="avatar-batch">
+            <img class="avatar-large" alt="avatar" src="<%= meetup.host.photo %>" />
+            <div class="card-specifications">
+              <h4><%= meetup.date.month %>.<%= meetup.date.day %>.<%= meetup.date.year %> at <%= meetup.time.hour %>h<%= meetup.time.min %></h4>
+              <h5><%= meetup.additional_info %></h5>
+              <%= link_to 'more details', meetup_path(meetup) %>
+              <%= link_to "Remove",
+                  meetup_path(meetup),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>

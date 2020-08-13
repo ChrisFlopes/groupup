@@ -1,0 +1,102 @@
+.nav-groupup {
+  position: relative;
+  background: $color-green;
+  transition: all 0.3s ease;
+  height: 100px;
+  padding: 0px 80px;
+}
+
+.nav-item {
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  padding-right: 40px;
+}
+
+.nav-link {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  &:hover {
+  color: white;
+  text-decoration: underline;
+  }
+}
+
+.nav-left {
+  position: absolute;
+  left: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-right {
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.logo img {
+  height: 70px;
+}
+
+.nav-clubhaus .avatar {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.fa-bars {
+  color: white;
+  position: absolute;
+  top: 45px;
+}
+
+*:before, *:after {
+  box-sizing: border-box;
+}
+.nav-dropdown-menu {
+  margin-top: 15px;
+  box-shadow: 1px 1px 4px #E6E6E6;
+  border-color: $color-green;
+}
+
+.dropdown-menu-left {
+  top: 50px;
+}
+
+.nav-dropdown-menu li > a {
+  transition: color 0.3s ease;
+  font-weight: lighter !important;
+  color: $color_green !important;
+  font-size: 16px !important;
+  line-height: 22px !important;
+  padding: 10px 20px;
+  text-align: left;
+  text-decoration: none;
+}
+.nav-dropdown-menu li > a:hover {
+  background: transparent !important;
+  color: $color-green !important;
+}
+.nav-dropdown-menu:before {
+  content: ' ';
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  background-color: white;
+  transform: rotate(45deg);
+  border-left: 1px solid #E6E6E6;
+  border-top: 1px solid #E6E6E6;
+}

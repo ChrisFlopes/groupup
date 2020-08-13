@@ -1,0 +1,75 @@
+.btn-prim {
+  color: white;
+  background-color: $color-green;
+  border: 1.5px solid $color-green;
+  font-weight: 500;
+  line-height: 28px;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  padding: 10px 40px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 40px;
+  &:hover {
+    color: $color-green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+ }
+
+.btn-sec {
+  border: 1.5px solid $color-green;
+  font-weight: 500;
+  line-height: 28px;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: $color-green;
+  padding: 10px 40px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 40px;
+  &:hover {
+    color: white;
+    background-color: $color-green;
+    text-decoration: none;
+  }
+ }
+
+.btn-prim-s {
+  color: white;
+  background-color: $color-green;
+  border: 1.5px solid $color-green;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  padding: 7px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: $color-green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+ }
+
+.btn-sec-s {
+  border: 1.5px solid $color-green;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: $color-green;
+  padding: 7px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: white;
+    background-color: $color-green;
+    text-decoration: none;
+  }
+ }
