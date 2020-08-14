@@ -5,13 +5,14 @@
 
     <div id="players-search" class="meetups-list">
     <% @meetups.each do |meetup| %>
+      <% if meetup.users.include?(current_user) %>
       <div class="card-list">
         <div class="card-avatar">
           <div class="avatar-batch">
             <img class="avatar-large" alt="avatar" src="<%= meetup.host.photo %>" />
             <div class="card-specifications">
               <h4><%= meetup.date.month %>.<%= meetup.date.day %>.<%= meetup.date.year %> at <%= meetup.time.hour %>h<%= meetup.time.min %></h4>
-              <h5>with <%= meetup.host.first_name %> <%= meetup.host.last_name %> </h5>
+              <h5><%= meetup.additional_info %></h5>
               <div class="card-spots">
                 <h4><%= meetup.participations.length %> people are attending.</h4>
               </div>
@@ -24,5 +25,6 @@
           </div>
         </div>
       </div>
+      <% end %>
     <% end %>
    </div>

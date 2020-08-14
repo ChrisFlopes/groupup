@@ -1,11 +1,6 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-9 col-sm-offset-2 col-md-6 col-md-offset-3">
-      <div class="log-in">
-        <%= image_tag "mostplayed.png" %>
-        <h2>Log in</h2>
-        <%= image_tag "mostplayed.png" %>
-      </div>
 
         <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="form-inputs">
@@ -14,13 +9,13 @@
                         required: false,
                         autofocus: true,
                         input_html: { autocomplete: "email" },
-                        placeholder: "Your Email ..."
+                        placeholder: "Email address"
                          %>
 
             <%= f.input :password,
                         required: false,
                         input_html: { autocomplete: "current-password" },
-                        placeholder: "& your password please" %>
+                        placeholder: "Password" %>
             <div class="remember-me">
               <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
             </div>

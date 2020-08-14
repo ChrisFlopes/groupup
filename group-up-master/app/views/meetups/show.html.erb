@@ -1,16 +1,27 @@
 <div style='text-align: center'>
-  <%= @meetup.additional_info %>
+  <br>
+  <br>
+  <br>
+  <h1><%= @meetup.additional_info %></h1>
   <h3>Hosted by <%= @meetup.host.first_name %> <%= @meetup.host.last_name %></h3>
   <h4>at <%= @meetup.time.hour %>:<%= @meetup.time.min %></h4>
   <h5>People attending:</h5>
     <% @meetup.users.each do |user| %>
       <h5><%= user.first_name %> <%= user.last_name %></h5>
     <% end %>
-
+    <%= link_to "Join", new_meetup_participation_path(@meetup), class:"btn-prim-s"%>
+    <br>
+    <br>
     <%= link_to "Remove event",
                   meetup_path(@meetup),
                   method: :delete,
+                  class:"btn-prim-s",
                   data: { confirm: "Are you sure?" } %>
 
-    <%= link_to "Join", new_meetup_participation_path(@meetup), class:"btn-prim-s"%>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
 </div>
